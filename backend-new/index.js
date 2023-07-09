@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const data = require('../backend/assets/schema/formdata');
+const data = require('../backend-new/assets/schema/formdata');
 const app = express();
 const jsonParser = bodyParser.json();
 
