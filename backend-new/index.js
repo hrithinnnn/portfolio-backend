@@ -51,7 +51,8 @@ app.post('/', (req, res) => {
     const lastName=req.body.lastName;
     const email=req.body.email;
     const comments=req.body.comments;
-    data.insertMany({company,firstName,lastName,email,comments}).then((ans)=>{
+    const date=req.body.date
+    data.insertMany({date,company,firstName,lastName,email,comments}).then((ans)=>{
         console.log(ans)
         res.status(200).json({ message: "success", data: {company,firstName,lastName,email,comments}})
     }).catch((err)=>{
